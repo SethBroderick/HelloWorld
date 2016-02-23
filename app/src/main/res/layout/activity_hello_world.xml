@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:text="@string/strButtonCaption"
         android:id="@+id/btnSayHello"
-        android:layout_marginTop="91dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="sayHello" />
+        android:onClick="sayHello"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,4 +24,17 @@
         android:id="@+id/txtOutput"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strButtonCaption"
+        android:id="@+id/button"
+        android:onClick="sayHello"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnSayHello"
+        android:layout_alignStart="@+id/btnSayHello"
+        android:layout_marginBottom="77dp" />
+
 </RelativeLayout>
